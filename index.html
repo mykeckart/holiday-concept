@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <title>A Holiday Concept</title>
+  <style>
+    :root {
+      --bg: #080507;
+      --panel: rgba(255, 255, 255, 0.055);
+      --text: #f7eef3;
+      --muted: #c9b6c1;
+      --line: rgba(255,255,255,.18);
+      --accent: #e8c6d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(165, 62, 105, .28), transparent 28rem),
+        radial-gradient(circle at 90% 18%, rgba(245, 205, 225, .12), transparent 24rem),
+        linear-gradient(180deg, #120a0f 0%, var(--bg) 58%, #040304 100%);
+    }
+    .wrap {
+      width: min(1040px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 56px 0 44px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .eyebrow {
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 300;
+      font-size: clamp(34px, 6vw, 70px);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+    .intro {
+      width: min(720px, 100%);
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 28px;
+      padding: 16px;
+      box-shadow: 0 28px 80px rgba(0,0,0,.42);
+      backdrop-filter: blur(18px);
+    }
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 18px;
+      background: #000;
+      outline: none;
+    }
+    .note {
+      width: min(760px, 100%);
+      margin: 34px auto 0;
+      border-top: 1px solid var(--line);
+      padding-top: 26px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+    .signature {
+      color: var(--text);
+      margin-top: 12px;
+      letter-spacing: .04em;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: rgba(255,255,255,.42);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">Private Viewing</div>
+      <h1>A 60-Second Holiday Concept</h1>
+      <p class="intro">
+        Hillary — I wrote, produced, and scored this short holiday film as a creative exercise inspired by the Victoria’s Secret brand. No pitch. No ask. Just something I thought you might enjoy seeing.
+      </p>
+    </header>
+
+    <section class="card" aria-label="Holiday concept video">
+      <video controls playsinline preload="metadata" poster="poster.jpg">
+        <source src="lets-cuddle-up.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="note">
+      <div>Original music, concept, production, and edit created and controlled by Mike Eck.</div>
+      <div class="signature">— Mike Eck</div>
+    </section>
+
+    <footer>Unlisted private concept page</footer>
+  </main>
+</body>
+</html>
